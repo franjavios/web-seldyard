@@ -1,9 +1,10 @@
 :root{
     --very-light-pink: #C7C7C7;
-    --text-input-field_: #F7F7F7;
+    --text-input-field: #F7F7F7;
     --hospital-green:#ACD9B2;
     --white: #FFFFFF;
     --black: #000000;
+    --dark:#232830;
     --sm:0.9rem;
     --md:1rem;
     --lg:1.13rem;
@@ -76,4 +77,38 @@ display: none;}
 }
 @media(max-width:640px){
     .logo{display: block;}
+}
+
+.email-image{width: 8.25rem;
+    height: 8.25rem;
+    border-radius: 50%;
+    background-color:var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.email-image img{
+    width: 80px;
+}
+
+.resend{
+    font-size: var(--sm);
+}
+
+.resend span{
+    color: var(--very-light-pink);
+}
+
+.resend a{
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+
+.form-container-email{
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 300px;
+        justify-items: center;
 }

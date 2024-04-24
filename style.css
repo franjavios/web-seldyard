@@ -34,6 +34,9 @@ display: none;}
         margin-bottom: 0.8rem;
         text-align: center;
     }
+
+.title-account{text-align: left;
+                margin-bottom: 3rem;}
 .subtitle{color: var(--very-light-pink);
         font-size: var(--md);
         font-weight: 300;
@@ -59,6 +62,12 @@ display: none;}
     padding: 0.375;
     margin-bottom: 0.8rem;}
 
+.input-name,.input-email,.input-name,.input-email{
+    margin-bottom: 1.3rem;
+}
+
+
+
 .primary-button{
     background-color: var(--hospital-green);
     border-radius: 0.5rem;
@@ -71,13 +80,22 @@ display: none;}
     height: 3.12rem;
 }
 
+.secondary-button{
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 3.12rem;
+}
 .login-button{
     margin-top: 0.85rem;
     margin-bottom: 0.8rem;
 }
-@media(max-width:640px){
-    .logo{display: block;}
-}
+
 
 .email-image{width: 8.25rem;
     height: 8.25rem;
@@ -111,4 +129,22 @@ display: none;}
         grid-template-rows: auto 1fr auto;
         width: 300px;
         justify-items: center;
+}
+form a{color: var(--hospital-green);
+font-size: var(--sm);
+text-align: center;
+text-decoration: none;
+margin-bottom: 4rem;}
+
+.value{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 0.5rem 0 2rem 0;
+
+}
+
+@media(max-width:640px){
+    .logo{display: block;}
+    .form{height: 100%;}
+    .secondary-button,.primary-button{margin-top: 6rem;}
 }

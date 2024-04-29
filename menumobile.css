@@ -1,0 +1,50 @@
+:root{
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green:#ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark:#232830;
+    --sm:0.9rem;
+    --md:1rem;
+    --lg:1.13rem;
+    
+
+}
+body{font-family: 'Quicksand', sans-serif;
+    margin: 0;}
+
+.mobile-menu{
+    padding: 1.5rem;
+}
+.mobile-menu ul{
+    padding: 0;
+    margin: 1.5rem 0 0;
+    list-style: none;
+}
+.mobile-menu ul:nth-child(1){
+    border-bottom: 1px solid var(--very-light-pink);
+   
+}
+
+.mobile-menu ul li{
+       margin: 1.5rem 
+    
+}
+.mobile-menu a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.email{
+    font-size: var(--sm);
+    font-weight: 300 !important;
+}
+
+.mobile-menu .sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green);
+}
+
+

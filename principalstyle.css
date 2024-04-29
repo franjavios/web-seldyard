@@ -12,7 +12,74 @@
 
 }
 body{font-family: 'Quicksand', sans-serif;
-    margin: 0;}
+    margin: 0;
+}
+
+.menu{
+    display: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.logo{
+    width: 6rem;
+    
+}
+.navbar-left ul, .navbar-right ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 4rem;
+}
+.navbar-email{
+    color: var(--very-light-pink);
+        font-size: var(--sm);
+        margin-right: 0.8rem;
+}
+.navbar-shopping-car{
+    position: relative;
+}
+.navbar-shopping-car div{
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--hospital-green);
+    border-radius:50% ;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -4px;
+    right:-10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.navbar-left {
+    display: flex;
+    }
+.navbar-left ul{
+    margin-left: 0.8rem;
+}
+
+
+.navbar-left ul li a, .navbar-right ul li a{
+text-decoration: none;
+color: var(--very-light-pink);
+border: 1px solid var(--white);
+padding: 0.5rem;
+border-radius: 0.5rem;
+}
+.navbar-left ul li a:hover, .navbar-right ul li a:hover{
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+}
+
 
 .cards-container{
     --card-size:20rem;
@@ -65,7 +132,53 @@ body{font-family: 'Quicksand', sans-serif;
         width: 4rem;
         height: 4rem;
 }
+/********* menu *************/
 
+.desktop-menu{
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+
+}
+.desktop-menu ul{
+    list-style: none;
+
+}
+.desktop-menu ul li{
+    text-align: end;
+    font-size: var(--lg);
+    
+
+}
+.desktop-menu ul li:nth-child(1), .desktop-menu ul li:nth-child(2){
+    font-weight: bold;
+    
+
+}
+
+.desktop-menu ul li:last-child{
+    padding-top: 1.3rem;
+    border: 1px solid var(--very-light-pink);
+}
+
+.desktop-menu ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.desktop-menu ul li a{
+color: var(--black);
+text-decoration: none;
+margin-bottom: 1.5rem;
+display: inline-block;
+}
+
+
+
+
+/****************************************************************************/
 
 @media (max-width:640px) {
     .cards-container{
@@ -80,5 +193,14 @@ body{font-family: 'Quicksand', sans-serif;
         width: var(--card-size);
         height: var(--card-size);
         
+    }
+    .menu{
+        display: block;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar-email{
+        display: none;
     }
 }

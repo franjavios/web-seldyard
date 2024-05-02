@@ -24,7 +24,15 @@ body{font-family: 'Quicksand', sans-serif;
     font-size: var(--lg);
     margin-bottom:2.5rem;
 }
-h1{justify-self: center;
+
+.title-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-container img{
+    transform: rotate(180deg);
+    
 }
 .my-order-container{
     display: grid;
@@ -51,17 +59,6 @@ h1{justify-self: center;
 
 }
 
-.order p span:nth-child(1){
-font-size: var(--md); 
-}
-.order p span:nth-child(2){
-    font-size: var(--sm);
-}
-
-.order p:nth-child(2){
-    text-align: end;
-    font-weight: bold;
-}
 .shopping-cart figure img{
     width: 4.4 rem;
     height: 4.4rem;
@@ -98,5 +95,20 @@ font-size: var(--md);
     font-size: var(--md);
     font-weight: bold;
     height: 3.12rem;
-    margin: 1em;
+   
+}
+
+
+@media (max-width: 640px){
+    .my-order-container{
+        width: 100%;
+      
+    }
+    .product-detail-img :nth-child(2){
+        width: 100%;
+        height: 360px;
+        object-fit:cover;
+        margin: 1rem;;
+        border-radius: 0 0 3rem 2rem;
+    }
 }
